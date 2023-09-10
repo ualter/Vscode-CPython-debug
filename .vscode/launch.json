@@ -8,9 +8,9 @@
         // Open any Cpython test case in cpython/Lib/test
         {
             "name": "Cpython test",
-            "type": "cppdbg",   
+            "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/python.exe",
+            "program": "${workspaceFolder}/python",
             "args": ["-m", "test", "-v", "${file}"],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}/Lib/test",
@@ -29,11 +29,11 @@
         // run python with -c option
         {
             "name": "python -c",
-            "type": "cppdbg",   
+            "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/python.exe",
+            "program": "${workspaceFolder}/python",
             // change the second argument accordinly
-            "args": ["-c", "print(\"hello\")"],
+            "args": ["-c", "print('hello')"],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
             "environment": [],
@@ -50,9 +50,9 @@
         },
         {
             "name": "python interpretter",
-            "type": "cppdbg",   
+            "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/python.exe",
+            "program": "${workspaceFolder}/python",
             // change the second argument accordinly
             "args": [],
             "stopAtEntry": false,
